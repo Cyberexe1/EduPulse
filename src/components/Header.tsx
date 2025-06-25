@@ -20,7 +20,14 @@ const Header = () => {
     { name: 'Analytics', href: '#analytics' },
     { name: 'Team', href: '#team' },
   ];
-
+  function downloadBrochure() {
+    const link = document.createElement('a');
+    link.href = '/src/components/EduPulse_QuickStart_Manual.pdf';
+    link.download = 'EduPulse_QuickStart_Manual.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
   return (
     <header className={`fixed w-full z-50 transition-all duration-300 ${
       isScrolled ? 'bg-white/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'
@@ -95,9 +102,9 @@ const Header = () => {
               <Link to="/dashboard" className="w-full btn-secondary text-sm block text-center" onClick={() => setIsMenuOpen(false)}>
                 📈 Dashboard
               </Link>
-             <a href="EduPulse_QuickStart_Manual.pdf" download> <button className="w-full btn-primary text-sm">
+              <button className="w-full btn-primary text-sm" onCLick={downloadBrochure}>
                 📄 Download Brochure
-              </button></a>
+              </button>
               <Link to="/demo" className="w-full btn-secondary text-sm block text-center" onClick={() => setIsMenuOpen(false)}>
                 🎥 Watch Demo
               </Link>
