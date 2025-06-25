@@ -95,9 +95,9 @@ const Header = () => {
               <Link to="/dashboard" className="w-full btn-secondary text-sm block text-center" onClick={() => setIsMenuOpen(false)}>
                 📈 Dashboard
               </Link>
-              <button className="w-full btn-primary text-sm">
+             <a href="EduPulse_QuickStart_Manual.pdf" download> <button className="w-full btn-primary text-sm">
                 📄 Download Brochure
-              </button>
+              </button></a>
               <Link to="/demo" className="w-full btn-secondary text-sm block text-center" onClick={() => setIsMenuOpen(false)}>
                 🎥 Watch Demo
               </Link>
