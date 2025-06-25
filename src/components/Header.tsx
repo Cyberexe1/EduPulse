@@ -66,7 +66,7 @@ const Header = () => {
             <Link to="/dashboard" className="btn-secondary">
               📈 Dashboard
             </Link>
-            <button className="btn-primary">
+            <button className="btn-primary" onClick={downloadBrochure}>
               📄 Download Brochure
             </button>
             <Link to="/demo" className="btn-secondary">
