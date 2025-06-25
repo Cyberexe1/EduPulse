@@ -22,7 +22,7 @@ const Header = () => {
   ];
   function downloadBrochure() {
     const link = document.createElement('a');
-    link.href = '/src/components/EduPulse_QuickStart_Manual.pdf';
+    link.href = 'src/components/EduPulse_QuickStart_Manual.pdf';
     link.download = 'EduPulse_QuickStart_Manual.pdf';
     document.body.appendChild(link);
     link.click();
