@@ -128,7 +128,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-- Email: contact@edupulse.ai
+- Email: vikastiwari1045@gmail.com
 - GitHub: [Repository](https://github.com/Cyberexe1/EduPulse)
 - Website: [EduPulse](https://edu-pulse-sage.vercel.app/)
 
